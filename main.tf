@@ -6,7 +6,7 @@ resource "aws_instance" "main" {
 
   tags = merge(
     {
-        Name = "${var.project}-${var.environment}-{var.component}"
+        Name = "${var.project}-${var.environment}-${var.component}"
     },
     local.common_tags
   )
